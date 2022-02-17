@@ -1,0 +1,31 @@
+SAMPLES = ['Sample1', 'Sample2', 'Sample3' ]
+
+rule all:
+    input:
+        'results/test.txt'
+
+rule quantify_genes:
+    input:
+        genome = 'data/genome.fa',
+        r1 = 'data/{sample}.R1.fastq.gz',
+        r2 = 'data/{sample}.R2.fastq.gz'
+    output:
+        'results/{sample}.txt'
+    shell:
+        'echo {input.genome} {input.r1} {input.r2} > {output}' 
+		
+rule full_output:
+	input:
+		expand( 'results/{sample}.txt', sample=SAMPLES)
+	output:
+		'results/test.txt'
+	run:
+		with open(output[0], 'w' ) as outfile:
+			outfile.write('The following files have been succesfully processed: \n')
+			for i in input:
+				sample = i.split("/")[-1]
+				outfile.write(f"{sample} \n")
+		
+rule clean:
+    shell:
+        'rm results/*.txt'
