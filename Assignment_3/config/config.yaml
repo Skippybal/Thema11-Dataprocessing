@@ -1,4 +1,5 @@
 #configfile config.yaml
+workdir: /homes/kanotebomer/Documents/Thema11/Thema11-Dataprocessing/Assignment_3
 genome: data/A
 ext : .fa
 samples:
