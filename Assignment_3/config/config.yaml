@@ -1,5 +1,7 @@
 #configfile config.yaml
-workdir: /homes/kanotebomer/Documents/Thema11/Thema11-Dataprocessing/Assignment_3
+#workdir: /homes/kanotebomer/Documents/Thema11/Thema11-Dataprocessing/Assignment_3
+workdir: /home/skippybal/PycharmProjects/Thema11-Dataprocessing/Assignment_3/
+url: https://bioinf.nl/~fennaf/snakemake/WC03/data/
 genome: data/A
 ext : .fa
 samples:

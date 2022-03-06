@@ -13,9 +13,9 @@ DATA_DIR = "/home/skippybal/PycharmProjects/Thema11-Dataprocessing/Assignment_2/
 SAMPLES_DIR = 'samples/'
 SAMPLES = ["A", "B", "C"]
 
-rule all:
-    input:
-        "results/assignment2/out.html"
+# rule all:
+#     input:
+#         "results/assignment2/out.html"
 
 rule bwa_map:
     input:

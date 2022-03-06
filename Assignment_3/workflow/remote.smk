@@ -2,9 +2,9 @@ from snakemake.remote.HTTP import RemoteProvider as HTTPRemoteProvider
 
 HTTP = HTTPRemoteProvider()
 
-rule all:
-    input:
-        "results/http/test.txt"
+# rule all:
+#     input:
+#         "results/http/test.txt"
 
 rule get_data_bioinf:
     input:
