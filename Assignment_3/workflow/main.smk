@@ -5,11 +5,6 @@ to execute the workflow.
 '''
 
 configfile: "config/config.yaml"
-include: "../workflow/assignment2_rewrite.smk"
-include: "../workflow/ncbi_iproved_improved.smk"
-include: "../workflow/remote.smk"
-include: "../workflow/merge_variants.smk"
-
 
 rule all:
     input:
@@ -17,3 +12,8 @@ rule all:
         "results/http/test.txt",
         "results/assignment2/out.html",
         "results/ncbi_improved_improved/mf.txt"
+
+include: "../workflow/assignment2_rewrite.smk"
+include: "../workflow/ncbi_iproved_improved.smk"
+include: "../workflow/remote.smk"
+include: "../workflow/merge_variants.smk"
