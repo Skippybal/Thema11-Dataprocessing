@@ -1,0 +1,13 @@
+How is the input output construction handled in case of a database?
+The database is created with a fasta file that is given by the filtered directory and then the file that is created by the filterFasta rule
+The out put is the files that are the output of the makeblastdb shell command.
+
+Both clearDB and loadBlasts uses a fake file. It creates a file with touch as output so that when the rule is finished the file will exist,
+then this can be used to confirm is the job was done by another rule. This file is then removed in the next rule seeing as the input 
+does not contain any usefull information.
+
+How is de Snakefile documented?
+The documentation is done using the message subsection of the rules.
+
+What would you improve in this script?
+Maybe try and group some rules together and make smaller modules that serve a specific purpose like building the database.
