@@ -1,0 +1,6 @@
+workdir: /home/skippybal/PycharmProjects/Thema11-Dataprocessing/Assignment_4/
+datadir: /home/skippybal/PycharmProjects/Thema11-Dataprocessing/Assignment_4/data/
+resultsdir: /home/skippybal/PycharmProjects/Thema11-Dataprocessing/Assignment_4/
+picard: /home/skippybal/Documents/picard/build/libs/picard.jar
+samples:
+  - A.txt
