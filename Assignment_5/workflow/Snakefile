@@ -1,0 +1,15 @@
+configfile: "config/config.yaml"
+
+rule all:
+    benchmark:
+        config["resultsdir"] + "benchmarks/rule_all.txt"
+    input:
+        config["resultsdir"] + "results/out.html"
+
+rule clean:
+    shell:
+        'rm -r ' + config["resultsdir"] + "results;"
+        "rm -r " + config["resultsdir"] + "benchmarks;"
+        "rm -r " + config["resultsdir"] + "logs"
+
+include: "rules/sign2.smk"
