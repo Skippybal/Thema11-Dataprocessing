@@ -20,7 +20,7 @@ rule bwa_map:
     message:
         "executing bwa mem on the following {input} to generate the following {output}"
     shell:
-        "bwa mem {input} | samtools view -Sb - > {output}"
+        "(bwa mem {input} | samtools view -Sb - > {output}) 2> {log}"
 
 rule samtools_sort:
     input:
@@ -34,8 +34,8 @@ rule samtools_sort:
     message:
         "executing samtools sort on the following {input} to generate the following {output}"
     shell:
-        "samtools sort -T sorted_reads/{wildcards.sample} "
-        "-O bam {input} > {output}"
+        "(samtools sort -T sorted_reads/{wildcards.sample} "
+        "-O bam {input} > {output}) 2> {log}1"
 
 rule samtools_index:
     input:
@@ -49,7 +49,7 @@ rule samtools_index:
     message:
         "executing samtools index on the following {input} to generate the following {output}"
     shell:
-        "samtools index {input}"
+        "samtools index {input} 2> {log}"
 
 rule bcftools_call:
     input:
@@ -66,7 +66,7 @@ rule bcftools_call:
         "executing samtools mpileup and bfctools call on the following {input.fa} and {input.bam} to generate the following {output}"
     shell:
         "samtools mpileup -g -f {input.fa} {input.bam} | "
-        "bcftools call -mv -O v - > {output}"
+        "(bcftools call -mv -O v - > {output}) 2> {log}"
 
 rule report:
     input:
