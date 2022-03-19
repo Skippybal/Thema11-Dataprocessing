@@ -35,7 +35,7 @@ rule samtools_sort:
         "executing samtools sort on the following {input} to generate the following {output}"
     shell:
         "(samtools sort -T sorted_reads/{wildcards.sample} "
-        "-O bam {input} > {output}) 2> {log}1"
+        "-O bam {input} > {output}) 2> {log}"
 
 rule samtools_index:
     input:
