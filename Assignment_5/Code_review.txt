@@ -1,0 +1,12 @@
+Why do you think he used different threads for different rules?
+Well, they aren't. They have set snakemake to take up the threads (snakemake makes this
+amount of cores available when the job is run), but never actually
+instruct the program to use the available threads. So the rule uses multiple threads, but
+the tool only uses 1.
+
+What would you recommend the writer to improve his script?
+First off, use the available cores by using the --threads argument or the equivalent for
+the tools that are used.
+I would also recommend putting the scripts in thier own directory (workflow/scripts).
+I'm also pritty sure there should be a .gitignore so that things like .snakemake don't 
+end up in the repo.

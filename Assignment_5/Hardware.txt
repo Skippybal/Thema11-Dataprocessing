@@ -1,0 +1,43 @@
+Mordor:
+CPU(s):                          40
+Thread(s) per core:              2
+Core(s) per socket:              10
+Socket(s):                       2
+
+Assemblix2019:
+CPU(s):                          160
+Thread(s) per core:              2
+Core(s) per socket:              20
+Socket(s):                       4
+
+Helix:
+CPU(s):                          32
+Thread(s) per core:              2
+Core(s) per socket:              8
+Socket(s):                       2
+
+Asterix:
+CPU(s):                          16
+Thread(s) per core:              2
+Core(s) per socket:              4
+Socket(s):                       2
+
+bin201:
+CPU(s):                          4
+Thread(s) per core:              1
+Core(s) per socket:              4
+Socket(s):                       1
+
+nuc410:
+CPU(s):                          4
+Thread(s) per core:              2
+Core(s) per socket:              2
+Socket(s):                       1
+Model name:                      Intel(R) Core(TM) i5-7260U CPU @ 2.20GHz
+
+
+
+
+
+
+
