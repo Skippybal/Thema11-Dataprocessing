@@ -1,6 +1,8 @@
 workdir: /home/skippybal/PycharmProjects/Thema11-Dataprocessing/Assignment_5/
-datadir: /home/skippybal/PycharmProjects/Thema11-Dataprocessing/Assignment_2/data/
-resultsdir: /home/skippybal/PycharmProjects/Thema11-Dataprocessing/Assignment_5/
+#datadir: /home/skippybal/PycharmProjects/Thema11-Dataprocessing/Assignment_2/data/
+#resultsdir: /home/skippybal/PycharmProjects/Thema11-Dataprocessing/Assignment_5/
+datadir: /homes/kanotebomer/Documents/Thema11/Thema11-Dataprocessing/Assignment_2/data/
+resultsdir: /homes/kanotebomer/Documents/Thema11/Thema11-Dataprocessing/Assignment_5/
 picard: /home/skippybal/Documents/picard/build/libs/picard.jar
 samples:
   - A

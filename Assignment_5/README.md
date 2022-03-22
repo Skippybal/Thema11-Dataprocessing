@@ -21,6 +21,11 @@ To clean the output you can use:
 snakemake clean --cores {cores}
 ```
 
+To run the script on slurm you can use:
+```
+snakemake --cluster "sbatch -p {cluster.partition} -N {cluster.nodes}" --cluster-config config/cluster_config.yaml --jobs 5 --latency-wait 30
+```
+
 ## Data paths
 The data paths need to be specified in the  ``config.yaml`` file in under the config
 directory. The data used for this assignment is the same data used for Assignment_2.

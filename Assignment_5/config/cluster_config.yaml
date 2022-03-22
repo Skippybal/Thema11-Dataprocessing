@@ -1,0 +1,10 @@
+# cluster_config.yml - cluster configuration
+
+__default__:
+    partition: assemblix
+    time: 01:00:00
+    nodes: 1
+    ntasks-per-node: 10
+    #chdir: /directory/to/change/to
+    output: skippybals_slurm-%j.out
+    error: skippybals_slurm-%j.err

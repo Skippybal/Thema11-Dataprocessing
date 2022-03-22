@@ -1,0 +1,13 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 2
+Rules claiming more threads will be scaled down.
+Select jobs to execute...
+
+[Tue Mar 22 11:26:21 2022]
+Job 0: Creating report from /homes/kanotebomer/Documents/Thema11/Thema11-Dataprocessing/Assignment_5/results/calls/all.vcf /homes/kanotebomer/Documents/Thema11/Thema11-Dataprocessing/Assignment_5/benchmarks/bwa_map/A.bwa.benchmark.txt /homes/kanotebomer/Documents/Thema11/Thema11-Dataprocessing/Assignment_5/benchmarks/bwa_map/B.bwa.benchmark.txt /homes/kanotebomer/Documents/Thema11/Thema11-Dataprocessing/Assignment_5/benchmarks/bwa_map/C.bwa.benchmark.txt to generate the following /homes/kanotebomer/Documents/Thema11/Thema11-Dataprocessing/Assignment_5/results/out.html output won't have inbedded file due to errors
+
+:13: (ERROR/3) Unknown target name: "t1".
+[Tue Mar 22 11:26:21 2022]
+Finished job 0.
+1 of 1 steps (100%) done
